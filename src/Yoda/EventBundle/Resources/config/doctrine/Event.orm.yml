@@ -1,0 +1,26 @@
+Yoda\EventBundle\Entity\Event:
+    type: entity
+    table: yoda_event
+    repositoryClass: Yoda\EventBundle\Entity\EventRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        name:
+            type: string
+            length: 255
+        imageName:
+            type: string
+            length: 255
+            nullable: true
+        time:
+            type: datetime
+        location:
+            type: string
+            length: 255
+        details:
+            type: text
+    lifecycleCallbacks: {  }

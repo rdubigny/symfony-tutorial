@@ -1,0 +1,14 @@
+{% extends '::base.html.twig' %}
+
+{% block title 'symfofou' %}
+
+{% block body %}
+    {# this is rude but I want to be respected #}
+    Hello you damn motherfucking {{ name|upper }}!<br/>
+    {% for i in 1..count %}
+        count is <strong>{{ i }}</strong><br/>
+    {% endfor %}
+    <h4>Event found</h4>
+    name: {{ event.name }} <br/>
+    location: {{ event.location }} <br/>
+{% endblock %}
