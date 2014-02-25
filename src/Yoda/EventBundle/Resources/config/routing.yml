@@ -5,3 +5,8 @@ event_homepage:
 event_homehome:
     pattern: /
     defaults: { _controller: EventBundle:Default:home }
+
+EventBundle_event:
+    resource: "@EventBundle/Resources/config/routing/event.yml"
+    prefix:   /event
+
