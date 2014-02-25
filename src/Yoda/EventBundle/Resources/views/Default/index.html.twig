@@ -1,8 +1,7 @@
 {% extends 'EventBundle::layout.html.twig' %}
 
 {% block body %}
-    {# this is rude but I want to be respected #}
-    Hello you damn motherfucking {{ name|upper }}!<br/>
+    Hello you damn {{ name|upper }}!<br/>
     {% for i in 1..count %}
         count is <strong>{{ i }}</strong><br/>
     {% endfor %}
